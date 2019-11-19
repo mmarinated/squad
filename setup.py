@@ -24,6 +24,7 @@ from subprocess import run
 from tqdm import tqdm
 from zipfile import ZipFile
 
+PATH_TO_DATA_FOLDER = '/scratch/mz2476/squad/data/' # was './data/'
 
 def download_url(url, output_path, show_progress=True):
     class DownloadProgressBar(tqdm):
@@ -45,7 +46,7 @@ def download_url(url, output_path, show_progress=True):
 
 
 def url_to_data_path(url):
-    return os.path.join('./data/', url.split('/')[-1])
+    return os.path.join(PATH_TO_DATA_FOLDER, url.split('/')[-1])
 
 
 def download(args):
