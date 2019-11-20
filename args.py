@@ -6,6 +6,7 @@ Author:
 
 import argparse
 
+PATH_TO_DATA_FOLDER = '/scratch/mz2476/squad/data/' # was './data/'
 
 def get_setup_args():
     """Get arguments needed in setup.py."""
@@ -27,19 +28,19 @@ def get_setup_args():
                         default='http://nlp.stanford.edu/data/glove.840B.300d.zip')
     parser.add_argument('--dev_meta_file',
                         type=str,
-                        default='./data/dev_meta.json')
+                        default=PATH_TO_DATA_FOLDER + 'dev_meta.json')
     parser.add_argument('--test_meta_file',
                         type=str,
-                        default='./data/test_meta.json')
+                        default=PATH_TO_DATA_FOLDER + 'test_meta.json')
     parser.add_argument('--word2idx_file',
                         type=str,
-                        default='./data/word2idx.json')
+                        default=PATH_TO_DATA_FOLDER + 'word2idx.json')
     parser.add_argument('--char2idx_file',
                         type=str,
-                        default='./data/char2idx.json')
+                        default=PATH_TO_DATA_FOLDER + 'char2idx.json')
     parser.add_argument('--answer_file',
                         type=str,
-                        default='./data/answer.json')
+                        default=PATH_TO_DATA_FOLDER + 'answer.json')
     parser.add_argument('--para_limit',
                         type=int,
                         default=400,
