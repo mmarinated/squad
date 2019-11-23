@@ -17,14 +17,13 @@ import spacy
 import ujson as json
 import urllib.request
 
-from args import get_setup_args
+from args import get_setup_args, PATH_TO_DATA_FOLDER
 from codecs import open
 from collections import Counter
 from subprocess import run
 from tqdm import tqdm
 from zipfile import ZipFile
 
-PATH_TO_DATA_FOLDER = '/scratch/mz2476/squad/data/' # was './data/'
 
 def download_url(url, output_path, show_progress=True):
     class DownloadProgressBar(tqdm):

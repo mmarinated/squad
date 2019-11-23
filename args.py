@@ -179,28 +179,28 @@ def add_common_args(parser):
     """Add arguments common to all 3 scripts: setup.py, train.py, test.py"""
     parser.add_argument('--train_record_file',
                         type=str,
-                        default='./data/train.npz')
+                        default=PATH_TO_DATA_FOLDER + 'train.npz')
     parser.add_argument('--dev_record_file',
                         type=str,
-                        default='./data/dev.npz')
+                        default=PATH_TO_DATA_FOLDER + 'dev.npz')
     parser.add_argument('--test_record_file',
                         type=str,
-                        default='./data/test.npz')
+                        default=PATH_TO_DATA_FOLDER + 'test.npz')
     parser.add_argument('--word_emb_file',
                         type=str,
-                        default='./data/word_emb.json')
+                        default=PATH_TO_DATA_FOLDER + 'word_emb.json')
     parser.add_argument('--char_emb_file',
                         type=str,
-                        default='./data/char_emb.json')
+                        default=PATH_TO_DATA_FOLDER + 'char_emb.json')
     parser.add_argument('--train_eval_file',
                         type=str,
-                        default='./data/train_eval.json')
+                        default=PATH_TO_DATA_FOLDER + 'train_eval.json')
     parser.add_argument('--dev_eval_file',
                         type=str,
-                        default='./data/dev_eval.json')
+                        default=PATH_TO_DATA_FOLDER + 'dev_eval.json')
     parser.add_argument('--test_eval_file',
                         type=str,
-                        default='./data/test_eval.json')
+                        default=PATH_TO_DATA_FOLDER + 'test_eval.json')
 
 
 def add_train_test_args(parser):
