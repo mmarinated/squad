@@ -6,7 +6,7 @@ Author:
 
 import argparse
 
-PATH_TO_DATA_FOLDER = '/scratch/mz2476/squad/data/' # was './data/'
+PATH_TO_DATA_FOLDER = './data/' # was './data/'
 
 def get_setup_args():
     """Get arguments needed in setup.py."""
